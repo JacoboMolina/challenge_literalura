@@ -14,16 +14,15 @@ Proyecto de una librería utilizando Spring Boot, JPA y PostgreSQL.
 1. Crea una base de datos llamada `libreria_db`:
 
 
-2. Configura las credenciales de acceso a la base de datos en el archivo PROPORTIES:
+2. Configura las credenciales de acceso a la base de datos en el archivo PROPERTIES:
 
-    ```properties
+```bash
 spring.datasource.url=jdbc:postgresql://localhost:5432/libreria_db
 spring.datasource.username=libreria_user
 spring.datasource.password=tu_contrasena
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-
-    ```
+```
 
 ### Construcción y ejecución
 
@@ -37,14 +36,15 @@ cd libreria
 
     ```bash
     mvn clean install
+    mvn spring-boot:run
+
     ```
 
 3. Ejecuta la aplicación:
 
     ```bash
-mvn clean install
-mvn spring-boot:run
-
+    mvn clean install
+    
     ```
 
 ### Uso de la API
