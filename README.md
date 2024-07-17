@@ -13,15 +13,8 @@ Proyecto de una librería utilizando Spring Boot, JPA y PostgreSQL.
 
 1. Crea una base de datos llamada `libreria_db`:
 
-    ```sql
-    
-CREATE USER libreria_user WITH ENCRYPTED PASSWORD tu_contrasena;
-GRANT ALL PRIVILEGES ON DATABASE libreria_db TO libreria_user;
 
-        ```
-
-
-2. Configura las credenciales de acceso a la base de datos en el archivo `src/main/resources/application.properties`:
+2. Configura las credenciales de acceso a la base de datos en el archivo PROPORTIES:
 
     ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/libreria_db
